@@ -8,7 +8,10 @@
 
 
 
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
     /* Styling for the container */
     #rifat {
       width: 100%;
@@ -39,46 +42,49 @@
       cursor: pointer;
       color: white;
       font-size: 24px;
-      background-color: red; /* Add your desired background color */
-      padding: 5px 10px; /* Add padding for better visual appearance */
-      border-radius: 5px; /* Add border radius for rounded corners */
     }
-</style>
+  </style>
 
+  <!-- Add Font Awesome CSS (you can get this from their website) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-
-<!-- The interstitial ad container -->
-<div id="rifat">
-    <span class="close-btn" onclick="closeInterstitial()">&times;</span>
+</head>
+<body>
+  <!-- The interstitial ad container -->
+  <div id="rifat">
+    <span class="close-btn" onclick="closeInterstitial"><i class="fas fa-times"></i></span>
     <iframe id="aswift_1" name="aswift_1"></iframe>
-</div>
+  </div>
 
-<!-- Your page content goes here -->
+  <!-- Your page content goes here -->
 
-<script>
-// Function to show the interstitial ad
-function showInterstitial() {
-  var adContainer = document.getElementById('rifat');
-  adContainer.style.display = 'block';
+  <script>
+    // Function to show the interstitial ad
+    function showInterstitial() {
+      var adContainer = document.getElementById('rifat');
+      adContainer.style.display = 'block';
 
-  var adIframe = document.getElementById('aswift_1');
-  adIframe.src = 'https://www.rotate4all.com/ptp/promote-278959';
-}
+      var adIframe = document.getElementById('aswift_1');
+      adIframe.src = 'https://www.rotate4all.com/ptp/promote-278959';
+    }
 
-// Function to close the interstitial ad
-function closeInterstitial() {
-  var adContainer = document.getElementById('rifat');
-  adContainer.style.display = 'none';
+    // Function to close the interstitial ad
+    function closeInterstitial() {
+      var adContainer = document.getElementById('rifat');
+      adContainer.style.display = 'none';
 
-  var adIframe = document.getElementById('aswift_1');
-  adIframe.src = ''; // Unload the ad iframe
-}
+      var adIframe = document.getElementById('aswift_1');
+      adIframe.src = ''; // Unload the ad iframe
+    }
 
-// Automatically show the interstitial ad after the page loads
-window.onload = function() {
-  showInterstitial();
-};
-</script>
+    // Automatically show the interstitial ad after the page loads
+    window.onload = function() {
+      showInterstitial();
+    };
+  </script>
+
+</body>
+</html>
 
 
 <meta content='7;url=https://sarcasticnotarycontrived.com/mnpdptag4r?key=4464fe274e7a8ec6fa193b7d5a910d5a' http-equiv='refresh'/>
